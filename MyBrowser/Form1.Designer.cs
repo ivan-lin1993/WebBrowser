@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.getDowload = new System.Windows.Forms.Button();
+            this.wait_time = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -88,6 +89,11 @@
             this.getDowload.UseVisualStyleBackColor = true;
             this.getDowload.Click += new System.EventHandler(this.getDowload_Click);
             // 
+            // wait_time
+            // 
+            this.wait_time.Interval = 1000*60*60;
+            this.wait_time.Tick += new System.EventHandler(this.wait_time_Tick);
+            // 
             // MyBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -118,6 +124,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button getDowload;
+        private System.Windows.Forms.Timer wait_time;
     }
 }
 
