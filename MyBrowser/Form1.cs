@@ -18,6 +18,7 @@ namespace MyBrowser
         int now = 0;
         int count = 0;
         string nowhttp = "";
+        const string Path = @"C:\Users\Public\tmp\";
         string txt = "mylist.txt";
         string downloadHttp = "https://docs.google.com/document/export?format=txt&id=1UJ_-1lWb_KrJvXKvoqRAgJwEVFuInxFqVA5HJ-5yqAw&token=AC4w5Vh6Br1q3Os8qb59jo0kDufFGfwd7A%3A1444204710231";
         System.IO.StreamReader file;
@@ -28,7 +29,7 @@ namespace MyBrowser
             InitializeComponent();
             webBrowser1.ScriptErrorsSuppressed = true;
             //Start();
-
+            System.IO.Directory.CreateDirectory(Path);
             
         }
 
@@ -58,13 +59,14 @@ namespace MyBrowser
                     //file = new System.IO.StreamReader(txt);
                     //timer1.Enabled = true;
                     label1.Text = "Done";
+                    webBrowser1.Navigate("127.0.0.1");
                     DeletMyList();
                 }
             }
         }
         private void DeletMyList()
         {
-            File.Delete(txt);
+            File.Delete(Path + txt);
             wait_time.Enabled = true;
             //Application.Exit();
         }
@@ -106,9 +108,9 @@ namespace MyBrowser
             wait_time.Enabled = false;
             if (ConnectGoogleTW()==true)
             {
-                wc.DownloadFile(downloadHttp, txt);
+                wc.DownloadFile(downloadHttp, Path+txt);
                 Hide();
-                file = new System.IO.StreamReader("mylist.txt");
+                file = new System.IO.StreamReader(Path+txt);
                 timer1.Enabled = true;
                 //MessageBox.Show("Work");
             }
@@ -132,6 +134,7 @@ namespace MyBrowser
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+            
             Start();
             timer2.Enabled = false;
         }
