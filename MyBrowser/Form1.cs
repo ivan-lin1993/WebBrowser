@@ -27,7 +27,8 @@ namespace MyBrowser
 
             InitializeComponent();
             webBrowser1.ScriptErrorsSuppressed = true;
-            Start();
+            //Start();
+
             
         }
 
@@ -110,7 +111,6 @@ namespace MyBrowser
                 file = new System.IO.StreamReader("mylist.txt");
                 timer1.Enabled = true;
                 //MessageBox.Show("Work");
-
             }
             else
             {
@@ -128,6 +128,12 @@ namespace MyBrowser
         {
             Start();
 
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            Start();
+            timer2.Enabled = false;
         }
 
     }
