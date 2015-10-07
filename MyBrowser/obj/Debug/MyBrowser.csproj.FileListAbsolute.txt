@@ -16,3 +16,12 @@ C:\Users\USER\Desktop\WebBrowser\MyBrowser\obj\Debug\MyBrowser.Properties.Resour
 C:\Users\USER\Desktop\WebBrowser\MyBrowser\obj\Debug\MyBrowser.csproj.GenerateResource.Cache
 C:\Users\USER\Desktop\WebBrowser\MyBrowser\bin\Debug\MyBrowser.exe
 C:\Users\USER\Desktop\WebBrowser\MyBrowser\bin\Debug\MyBrowser.pdb
+H:\Ivan\hack\WebBrowser\MyBrowser\bin\Debug\MyBrowser.exe.config
+H:\Ivan\hack\WebBrowser\MyBrowser\obj\Debug\MyBrowser.exe
+H:\Ivan\hack\WebBrowser\MyBrowser\obj\Debug\MyBrowser.pdb
+H:\Ivan\hack\WebBrowser\MyBrowser\bin\Debug\MyBrowser.exe
+H:\Ivan\hack\WebBrowser\MyBrowser\bin\Debug\MyBrowser.pdb
+H:\Ivan\hack\WebBrowser\MyBrowser\obj\Debug\MyBrowser.csprojResolveAssemblyReference.cache
+H:\Ivan\hack\WebBrowser\MyBrowser\obj\Debug\MyBrowser.MyBrowser.resources
+H:\Ivan\hack\WebBrowser\MyBrowser\obj\Debug\MyBrowser.Properties.Resources.resources
+H:\Ivan\hack\WebBrowser\MyBrowser\obj\Debug\MyBrowser.csproj.GenerateResource.Cache
