@@ -23,10 +23,12 @@ namespace MyBrowser
         {
             InitializeComponent();
             webBrowser1.ScriptErrorsSuppressed = true;
+            Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Hide();
             timer1.Enabled = false;            
         }
 
@@ -47,13 +49,18 @@ namespace MyBrowser
                 {
                     timer1.Enabled = false;
                     file.Close();
-                    file = new System.IO.StreamReader(txt);
+                    //file = new System.IO.StreamReader(txt);
                     //timer1.Enabled = true;
                     label1.Text = "Done";
+                    DeletMyList();
                 }
             }
         }
-
+        private void DeletMyList()
+        {
+            File.Delete(txt);
+            Application.Exit();
+        }
         private void getDowload_Click(object sender, EventArgs e)
         {
             WebClient wc = new WebClient();
@@ -62,8 +69,17 @@ namespace MyBrowser
         }
         private void Start()
         {
+            WebClient wc = new WebClient();
+            wc.DownloadFile(downloadHttp, txt);
+            Hide();
             file = new System.IO.StreamReader("mylist.txt");
             timer1.Enabled = true;  
         }
+
+        private void MyBrowser_Load(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
     }
 }

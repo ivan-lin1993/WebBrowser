@@ -57,7 +57,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
+            this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
@@ -92,14 +92,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 510);
+            this.ClientSize = new System.Drawing.Size(0, 0);
             this.Controls.Add(this.getDowload);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MyBrowser";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "MyBrowser";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.MyBrowser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
