@@ -34,21 +34,22 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.getDowload = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(218, 400);
+            this.button1.Location = new System.Drawing.Point(144, 62);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Start";
+            this.button1.Text = "Stop";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(84, 29);
+            this.webBrowser1.Location = new System.Drawing.Point(12, 91);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(413, 321);
@@ -62,7 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 374);
+            this.label1.Location = new System.Drawing.Point(10, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 12);
             this.label1.TabIndex = 4;
@@ -71,17 +72,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(216, 374);
+            this.label2.Location = new System.Drawing.Point(10, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 12);
             this.label2.TabIndex = 5;
             this.label2.Text = "label2";
             // 
+            // getDowload
+            // 
+            this.getDowload.Location = new System.Drawing.Point(12, 62);
+            this.getDowload.Name = "getDowload";
+            this.getDowload.Size = new System.Drawing.Size(75, 23);
+            this.getDowload.TabIndex = 8;
+            this.getDowload.Text = "Get Donload";
+            this.getDowload.UseVisualStyleBackColor = true;
+            this.getDowload.Click += new System.EventHandler(this.getDowload_Click);
+            // 
             // MyBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 510);
+            this.ClientSize = new System.Drawing.Size(433, 510);
+            this.Controls.Add(this.getDowload);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.webBrowser1);
@@ -100,6 +112,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button getDowload;
     }
 }
 

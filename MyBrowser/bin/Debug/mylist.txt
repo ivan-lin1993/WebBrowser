@@ -1,4 +1,4 @@
-http://learn4rookie.blogspot.tw/2015/10/data-communication-1-arq.html
+﻿http://learn4rookie.blogspot.tw/2015/10/data-communication-1-arq.html
 http://learn4rookie.blogspot.tw/2015/10/blog-post_4.html
 http://learn4rookie.blogspot.tw/2015/10/data-mining-week-1.html
 http://learn4rookie.blogspot.tw/2015/10/tictactoe-android-practice.html
@@ -10,5 +10,8 @@ http://learn4rookie.blogspot.tw/2015/09/part1.html
 http://learn4rookie.blogspot.tw/2015/09/part2.html
 http://learn4rookie.blogspot.tw/2015/10/part3.html
 http://learn4rookie.blogspot.tw/p/blog-page.html
-https://www.youtube.com/watch?v=o95YN4YpI5Q
 http://learn4rookie.blogspot.tw/p/data-mining.html
+http://learn4rookie.blogspot.tw/2015/10/poisson-random-variable.html
+http://learn4rookie.blogspot.tw/p/data-communication.html
+http://learn4rookie.blogspot.tw/2015/10/blog-post_6.html
+https://www.youtube.com/watch?t=1&v=o95YN4YpI5Q
