@@ -100,6 +100,7 @@ namespace MyBrowser
 
         private void Start()
         {
+            wait_time.Interval = 1000 * 60 * 60;
             WebClient wc = new WebClient();
             wait_time.Enabled = false;
             if (ConnectGoogleTW()==true)
@@ -108,13 +109,13 @@ namespace MyBrowser
                 Hide();
                 file = new System.IO.StreamReader("mylist.txt");
                 timer1.Enabled = true;
-                MessageBox.Show("Work");
+                //MessageBox.Show("Work");
 
             }
             else
             {
                 wait_time.Enabled = true;
-                MessageBox.Show("Failed");
+                //MessageBox.Show("Failed");
             }
         }
 

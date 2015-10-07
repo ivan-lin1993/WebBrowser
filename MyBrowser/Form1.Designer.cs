@@ -91,7 +91,7 @@
             // 
             // wait_time
             // 
-            this.wait_time.Interval = 1000*60*60;
+//            this.wait_time.Interval = 1000*60*60;
             this.wait_time.Tick += new System.EventHandler(this.wait_time_Tick);
             // 
             // MyBrowser
