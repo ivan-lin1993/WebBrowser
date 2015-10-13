@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.getDowload = new System.Windows.Forms.Button();
-            this.wait_time = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -90,10 +89,6 @@
             this.getDowload.UseVisualStyleBackColor = true;
             this.getDowload.Click += new System.EventHandler(this.getDowload_Click);
             // 
-            // wait_time
-            // 
-            this.wait_time.Tick += new System.EventHandler(this.wait_time_Tick);
-            // 
             // timer2
             // 
             this.timer2.Enabled = true;
@@ -130,7 +125,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button getDowload;
-        private System.Windows.Forms.Timer wait_time;
         private System.Windows.Forms.Timer timer2;
     }
 }

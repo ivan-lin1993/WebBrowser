@@ -35,7 +35,6 @@ namespace MyBrowser
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hide();
             timer1.Enabled = false;
         }
 
@@ -61,13 +60,13 @@ namespace MyBrowser
                     label1.Text = "Done";
                     webBrowser1.Navigate("127.0.0.1");
                     DeletMyList();
+                    Environment.Exit(0);
                 }
             }
         }
         private void DeletMyList()
         {
             File.Delete(Path + txt);
-            wait_time.Enabled = true;
             //Application.Exit();
         }
         private void getDowload_Click(object sender, EventArgs e)
@@ -103,20 +102,18 @@ namespace MyBrowser
 
         private void Start()
         {
-            wait_time.Interval = 1000 * 60 * 60;
             WebClient wc = new WebClient();
-            wait_time.Enabled = false;
+
             if (ConnectGoogleTW()==true)
             {
                 wc.DownloadFile(downloadHttp, Path+txt);
-                Hide();
                 file = new System.IO.StreamReader(Path+txt);
                 timer1.Enabled = true;
                 //MessageBox.Show("Work");
             }
             else
             {
-                wait_time.Enabled = true;
+                Environment.Exit(0);
                 //MessageBox.Show("Failed");
             }
         }
